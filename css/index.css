@@ -343,3 +343,12 @@ h1 {
 		color: #fff;
 	}
 }
+
+.object-content {
+	position: absolute;
+	right: 0;
+	font-size: 36px;
+	color: #f7fcff;
+	bottom: 180px;
+	text-align: right;
+}
