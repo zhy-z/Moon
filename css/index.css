@@ -6,15 +6,12 @@ body {
 	10% {
 		transform: translateX(7vw) translateY(-10vh) rotate(0deg);
 	}
-
 	40% {
 		transform: translateX(2vw) translateY(-30vh) rotate(5deg);
 	}
-
 	70% {
 		transform: translateX(10vw) translateY(-70vh) rotate(-5deg);
 	}
-
 	100% {
 		transform: translateX(3vw) translateY(-120vh) rotate(3deg);
 	}
@@ -24,15 +21,12 @@ body {
 	10% {
 		transform: translateX(2vw) translateY(-15vh) rotate(0deg);
 	}
-
 	40% {
 		transform: translateX(10vw) translateY(-60vh) rotate(5deg);
 	}
-
 	70% {
 		transform: translateX(3vw) translateY(-90vh) rotate(-5deg);
 	}
-
 	100% {
 		transform: translateX(12vw) translateY(-100vh) rotate(3deg);
 		opacity: 0.1;
@@ -44,17 +38,14 @@ body {
 		transform: translateX(5vw) translateY(-20vh) rotate(0deg);
 		opacity: 1;
 	}
-
 	40% {
 		transform: translateX(1vw) translateY(-50vh) rotate(5deg);
 		opacity: 0.8;
 	}
-
 	70% {
 		transform: translateX(7vw) translateY(-80vh) rotate(-5deg);
 		opacity: 0.7;
 	}
-
 	100% {
 		transform: translateX(14vw) translateY(-100vh) rotate(3deg);
 		opacity: 0.1;
@@ -107,8 +98,7 @@ body {
 	filter: url(#filter);
 }
 
-.kongming-latern,
-.kongming-latern-litle {
+.kongming-latern, .kongming-latern-litle {
 	position: absolute;
 	height: 5.1vw;
 	width: 3.5vw;
@@ -116,7 +106,6 @@ body {
 	background: linear-gradient(#92090e, #ea3d2d, #fbf885);
 	animation: FlyOne 22s linear infinite;
 }
-
 
 .latern-left {
 	border-left: 5vw solid transparent;
@@ -151,8 +140,7 @@ body {
 	z-index: 2;
 }
 
-.kongming-latern:nth-child(2),
-.kongming-latern:nth-child(3) {
+.kongming-latern:nth-child(2), .kongming-latern:nth-child(3) {
 	animation: FlyThree 18s linear infinite;
 	animation-delay: 6s;
 	height: 3.7vw;
@@ -168,22 +156,19 @@ body {
 	animation-delay: 2s;
 }
 
-.kongming-latern:nth-child(2) .latern-left,
-.kongming-latern:nth-child(3) .latern-left {
+.kongming-latern:nth-child(2) .latern-left, .kongming-latern:nth-child(3) .latern-left {
 	border-left: 3vw solid transparent;
 	top: 1.5vw;
 	left: -2.4vw;
 }
 
-.kongming-latern:nth-child(2) .latern-right,
-.kongming-latern:nth-child(3) .latern-right {
+.kongming-latern:nth-child(2) .latern-right, .kongming-latern:nth-child(3) .latern-right {
 	border-right: 3vw solid transparent;
 	top: 0.6vw;
 	left: 0.9vw;
 }
 
-.kongming-latern:nth-child(2) .latern-bottom,
-.kongming-latern:nth-child(3) .latern-bottom {
+.kongming-latern:nth-child(2) .latern-bottom, .kongming-latern:nth-child(3) .latern-bottom {
 	top: 1.6vw;
 	height: 1vw;
 	width: 2.5vw;
@@ -246,7 +231,6 @@ body {
 	border-top-left-radius: 50%;
 	transform: rotate(-23deg) translate(0.7vw, -3vw);
 	right: -0.2vw;
-	/* top: 0.8vw; */
 }
 
 .top-roof:after {
@@ -302,14 +286,12 @@ body {
 	width: 0.7vw;
 }
 
-
 .word {
 	width: 100%;
 	height: 100%;
 	position: relative;
 	padding: 2em;
 	filter: contrast(20);
-
 }
 
 h1 {
@@ -322,7 +304,7 @@ h1 {
 	display: block;
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 40%;
 	transform: translate3d(-50%, -50%, 0);
 	letter-spacing: 2.0rem;
 }
@@ -332,11 +314,9 @@ h1 {
 		letter-spacing: -2.2rem;
 		filter: blur(.3rem);
 	}
-
 	50% {
 		filter: blur(.5rem);
 	}
-
 	100% {
 		letter-spacing: .5rem;
 		filter: blur(0rem);
@@ -351,4 +331,10 @@ h1 {
 	color: #f7fcff;
 	bottom: 180px;
 	text-align: right;
+}
+
+@media screen and (max-width:1080px) {
+	.object-content {
+		font-size: 18px;
+	}
 }
